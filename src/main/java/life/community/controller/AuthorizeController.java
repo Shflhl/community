@@ -1,4 +1,4 @@
-package life.community.Controller;
+package life.community.controller;
 
 import life.community.dto.AccessTokenDTO;
 import life.community.dto.GithubUser;
@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.UUID;
 
