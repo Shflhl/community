@@ -19,6 +19,14 @@ github登录的理解
 时填写的重定向地址，并且此时携带github验证成功后code。我的网站收到了这个code就可以
 用这个code去向github获取用户github账号信息。
 
-OKHttp
+OKHttp用于我的网站与github交互。
 
-用于我的网站与github交互。
+配置变量放在application.properties
+
+Cookies是存在自己的浏览器当中的。并且每个只属于一个网址。当我们浏览器中存在一个
+网站的Cookies时，当我们请求这个网站时会自动把Cookies带上。我们请求的网站就可与
+根据Cookies中的信息获取到登陆状态什么的。
+
+H2数据库，能直接通过jar依赖来使用数据库。内嵌数据库。Spring Boot可以
+自动配置嵌入式H2， HSQL和Derby数据库。您无需提供任何连接URL。您只需要包含要使用的嵌入式数据库的构建依赖项。
+
