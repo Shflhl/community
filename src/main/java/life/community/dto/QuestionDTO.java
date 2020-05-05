@@ -1,7 +1,8 @@
-package life.community.model;
+package life.community.dto;
 
-public class Question {
+import life.community.model.User;
 
+public class QuestionDTO {
     private Integer id;
     private String title;
     private String description;
@@ -9,6 +10,7 @@ public class Question {
     private Long gmtCreate;
     private Long gmtModified;
     private Integer creator;
+    private Integer viewCount;
 
     public Integer getId() {
         return id;
@@ -90,7 +92,15 @@ public class Question {
         this.likeCount = likeCount;
     }
 
-    private Integer viewCount;
     private Integer commentCount;
     private Integer likeCount;
+    private User user;
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 }
