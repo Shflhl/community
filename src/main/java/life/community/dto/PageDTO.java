@@ -79,13 +79,8 @@ public class PageDTO {
     private List<Integer> pages = new ArrayList<>();
     private Integer totalPage;
 
-    public void setPage(Integer totalCount, Integer page, Integer size) {
-        if (totalCount < size)
-            totalPage = 1;
-        if (totalCount % size == 0)
-            totalPage = totalCount/size;
-        else
-            totalPage = totalCount/size + 1;
+    public void setPage(Integer totalPage, Integer page) {
+        this.totalPage = totalPage;
         this.page = page;
 
         int preNum = page - 3;

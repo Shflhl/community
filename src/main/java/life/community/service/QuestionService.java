@@ -49,7 +49,7 @@ public class QuestionService {
 
         // 把页面内容课当前页导航信息封装在一起
         PageDTO pageDTO = new PageDTO();
-        pageDTO.setPage(totalCount,page,size);
+        pageDTO.setPage(totalPage,page);
         pageDTO.setQuestions(questionDTOList);
 
         return pageDTO;
@@ -79,7 +79,16 @@ public class QuestionService {
             questionDTOList.add(questionDTO);
         }
         pageDTO.setQuestions(questionDTOList);
-
+        pageDTO.setPage(totalPage,page);
         return pageDTO;
+    }
+
+    public QuestionDTO getQuestionById(Integer id) {
+        Question question = questionMapper.getById(id);
+        QuestionDTO questionDTO = new QuestionDTO();
+        BeanUtils.copyProperties(question, questionDTO);
+        User user = userMapper.findById(question.getCreator());
+        questionDTO.setUser(user);
+        return questionDTO;
     }
 }
