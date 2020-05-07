@@ -51,4 +51,11 @@ Flyway:经过测试可知，flyway用法，当要修改表结构就在db文件�
 
 SpringBoot：拦截器功能
 
+Mybatis-Generator 插件：
+    前提条件：创建好数据库以及数据表。
+    使用方法：
+        （1）写好配置文件generatorConfig.xml
+        （2）mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
+        （3）运行完上面的就可以自动生成与数据库表对应的model、以及操做这个模型的类modelExample、以及具体对应的xml（sql）
+
 
