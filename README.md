@@ -1,12 +1,20 @@
-[TOC]
 
-# IDEA
+
+# IDEA 
 
  - alt + enter 导入类
  - ctrl + Y 删除一行
  - ctrl + alt + v 抽取一个变量
  - ctrl + shift + n 输入名字打开文件
  - alt + enter 没有方法时创建方法
+
+## 机器环境
+
+1. T490
+   - Maven
+   - Maven home dir:C:/Users/duansihong/.m2/wrapper/dists/apache-maven-3.6.3-bin/1iopthnavndlasol9gbrbg6bf2/apache-maven-3.6.3
+   - User settting:C:/Users/duansihong/.m2
+   - 仓库位置：C:/Users/duansihong/.m2
 
 # Spring Boot
 
