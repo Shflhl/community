@@ -5,6 +5,7 @@ import life.community.dto.GithubUser;
 import life.community.mapper.UserMapper;
 import life.community.model.User;
 import life.community.provider.GithubProvider;
+import life.community.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.UUID;
 
@@ -29,8 +31,8 @@ public class AuthorizeController {
     private String redirectUrl;
 
 
-    @Autowired(required = false)// 可以在启动类中加入@MapperScan("Mapper包名")
-    private UserMapper userMapper;
+    @Autowired
+    private UserService userService;
 
 
     @GetMapping("callback")
@@ -51,15 +53,24 @@ public class AuthorizeController {
             user.setToken(token);
             user.setName(githubUser.getName());
             user.setAccountId(String.valueOf(githubUser.getId()));
-            user.setGmtCreate(System.currentTimeMillis());
-            user.setGmtModified(user.getGmtCreate());
             user.setAvatarUrl(githubUser.getAvatar_url());
-            userMapper.insert(user);
+            // 下面语句存在Bug，每次登录都会创建新的用户。解决办法：根据github的accountID查询，看是否存在，存在则在数据库中更新。
+            userService.createOrUpdate(user);
             response.addCookie(new Cookie("token",token));
             // 可以获取到用户，登录成功。把用户信息放入session,并且写入 Cookies
             return "redirect:/";
         }else{
             return "redirect:/";
         }
+    }
+
+    @GetMapping("/logout")
+    public String logout(HttpServletRequest request,
+                         HttpServletResponse response) {
+        request.getSession().removeAttribute("user");
+        Cookie cookie = new Cookie("token", null);
+        cookie.setMaxAge(0);
+        response.addCookie(cookie);
+        return "redirect:/";
     }
 }
