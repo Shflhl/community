@@ -27,7 +27,8 @@
 
 SpringBoot：拦截器功能
 
-
+1. Spring Boot 多模块实战[https://segmentfault.com/a/1190000011367492]
+   - 多模块中
 
 window命令
 - dir 相当于 ls
@@ -171,6 +172,9 @@ https://juejin.im/entry/6844903802215071758
    
 
 # Mysql
+
+1. (数据库、表、字段、索引命名规则)[https://www.biaodianfu.com/mysql-best-practices.html]
+2. 
 
 # Q&A
 

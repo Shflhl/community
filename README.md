@@ -27,10 +27,115 @@
 
 SpringBoot：拦截器功能
 
+1. Spring Boot Logging 
+
+   支持 Logback, Log4J2 , java util logging，默认是Logback，导入任何的starter都会引用Logging，默认输出到console。
+
+   **logging.level.\* :** *可以设置为包前缀，分别控制不同包下面日志输出级别。
+
+   ~~~xml
+   logging.level.root= WARN 
+   logging.level.org.springframework.security= DEBUG
+   logging.level.org.springframework.web= ERROR
+   logging.level.org.hibernate= DEBUG
+   logging.level.org.apache.commons.dbcp2= DEBUG 
+   ~~~
+
+   **logging.file :**配置日志输出的文件名，也可以配置文件名的绝对路径。
+   **logging.path :**配置日志的路径。如果没有配置**logging.file**属性或者**logging.file**配置为目录，Spring Boot 将默认使用spring.log作为文件名（默认在根路径下）。
+   **logging.pattern.console :**定义console中logging的样式。
+   **logging.pattern.file :**定义文件中日志的样式。
+   **logging.pattern.level :**定义渲染不同级别日志的格式。默认是%5p.
+   **logging.exception-conversion-word :**.定义当日志发生异常时的转换字
+   **PID :**定义当前进程的ID
+
+   - 创建一个SLF4J的例子，首先获得org.slf4j.Logger的实例。
+
+     ~~~java
+     package com.concretepage;
+     import org.slf4j.Logger; //这里引用库的区别
+     import org.slf4j.LoggerFactory;
+     import org.springframework.boot.SpringApplication;
+     import org.springframework.boot.autoconfigure.SpringBootApplication;
+     @SpringBootApplication
+     public class MyApplication {
+         private static final Logger logger = LoggerFactory.getLogger(MyApplication.class);  
+         public static void main(String[] args) {
+             SpringApplication.run(MyApplication.class, args);
+             logger.debug("--Application Started--");
+             }       
+     }  
+     ~~~
+
+   - 在application.properties配置包com.concretepage日志记录级别
+
+     ~~~java
+     logging.level.root= WARN
+     logging.level.org.springframework.web= ERROR
+     logging.level.com.concretepage= DEBUG
+     ~~~
+
+   - 默认的Logback，有两种使用方式：application.properties或者**src\main\resources\logback-spring.xml**
+
+     ~~~xml
+     <configuration>
+         <include resource="org/springframework/boot/logging/logback/base.xml"/>
+         <logger name="org.springframework.web" level="ERROR"/>
+         <logger name="com.concretepage" level="DEBUG"/>
+     </configuration>  
+     ~~~
+
+   - 使用**Log4J2**要先去除Logback的依赖，并且引入spring-boot-starter-log4j2的依赖。类似的我们可以通过xml和application.properties配置
+
+     ~~~xml
+     <dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-web</artifactId>
+     </dependency>
+     <dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter</artifactId>
+         <exclusions>
+             <exclusion>
+                 <groupId>org.springframework.boot</groupId>
+                 <artifactId>spring-boot-starter-logging</artifactId>
+             </exclusion>
+         </exclusions>
+     </dependency>
+     <dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-log4j2</artifactId>
+     </dependency>
+     ~~~
+
+2. Spring Boot 定时任务
+
+   1. 主程序入口 @EnableScheduling 开启定时任务
+
+   2. 定时方法上 @Scheduled 设置定时
+
+      ~~~java
+      @Component //定时任务类使用@Component注解
+      public class ScheduledTask {
+      
+          @Scheduled(fixedRate = 3000) //定时方法使用@Scheduled注解
+          public void scheduledTask() {
+              System.out.println("任务执行时间：" + LocalDateTime.now());
+          }
+      }
+      ~~~
+
+   3. @Scheduled配置规则
+      - cron属性：按cron规则执行
+      - fixedRate 属性：以固定时间执行
+      - fixedDelay 属性：上次执行完毕后延迟再执行
+      - initialDelay 属性：第一次延时多久执行执行，需要配合fixedRate和fixedDelay使用
+
+3. 
 
 
-window命令
-- dir 相当于 ls
+
+
 
 # github登录
 
@@ -162,11 +267,10 @@ https://juejin.im/entry/6844903802215071758
    ~~~
 
    ## Mybatis-Generator 插件
-   ​    前提条件：创建好数据库以及数据表。
-   ​    使用方法：
-   ​        （1）写好配置文件generatorConfig.xml
-   ​        （2）mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
-   ​        （3）运行完上面的就可以自动生成与数据库表对应的model、以及操做这个模型的类modelExample、以及具体对应的xml（sql）
-
+   ​	详细文章链接（https://juejin.im/post/6844903982582743048#heading-20）    
    
+   ​	前提条件：创建好数据库以及数据表。
+     
+   
+
 
