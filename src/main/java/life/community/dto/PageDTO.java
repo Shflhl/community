@@ -6,6 +6,12 @@ import java.util.List;
 public class PageDTO {
     private List<QuestionDTO> questions;
     private boolean showPrevious = true;
+    private boolean showFirstPage;
+    private boolean showNext = true;
+    private boolean showEndPage;
+    private Integer page;
+    private List<Integer> pages = new ArrayList<>();
+    private Integer totalPage;
 
     public List<QuestionDTO> getQuestions() {
         return questions;
@@ -14,11 +20,6 @@ public class PageDTO {
     public void setQuestions(List<QuestionDTO> questions) {
         this.questions = questions;
     }
-
-    private boolean showFirstPage;
-    private boolean showNext = true;
-    private boolean showEndPage;
-    private Integer page;
 
     public boolean isShowPrevious() {
         return showPrevious;
@@ -75,9 +76,6 @@ public class PageDTO {
     public void setTotalPage(Integer totalPage) {
         this.totalPage = totalPage;
     }
-
-    private List<Integer> pages = new ArrayList<>();
-    private Integer totalPage;
 
     public void setPage(Integer totalPage, Integer page) {
         this.totalPage = totalPage;

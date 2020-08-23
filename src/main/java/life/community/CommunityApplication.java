@@ -7,6 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @MapperScan("life.community.mapper")
+
+
+
 public class CommunityApplication {
 
     public static void main(String[] args) {
