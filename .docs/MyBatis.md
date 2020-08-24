@@ -4,7 +4,7 @@
 
 ​	映射器是MyBatis中最核心的组件之一，在MyBatis 3之前，只支持xml映射器，即：所有的SQL语句都必须在xml文件中配置。而从MyBatis 3开始，还支持接口映射器，这种映射器方式允许以Java代码的方式注解定义SQL语句。
 
-![](C:\Users\14242\IdeaProjects\community\.docs\imgs\02-MyBatisMapper.PNG)
+![](imgs\02-MyBatisMapper.PNG)
 
 ## 1.2 XML映射器
 
@@ -245,4 +245,3 @@ ApplicationContext context = new ClassPathXmlApplicationContext("mybatis-spring.
 TestMapper testMapper =	context.getBean(TestMapper.class);
 Test test =	testMapper.selectOneTest(1);
 ~~~
-

@@ -314,11 +314,84 @@ mybatis:
         default-statement-timeout: 30
 ~~~
 
-# MyBatis-Generator 插件
+# 2 MyBatis-Generator 插件
+## 2.1 配置MyBatis Generator
 
-​	详细文章链接（https://juejin.im/post/6844903982582743048#heading-20）
+​	[详细文章链接]（https://juejin.im/post/6844903982582743048#heading-20）
 
 ​    通过上面的分析，可以推断出使用MyBatis-Generator会生成model、mapper.xml、mapper。然后在Spring Boot启动类中添加`@MapperScan("life.community.mapper")`相当于上面Spring集成原生MyBatis中配置`MapperScannerConfigurer.setBasePackage`类。
 
-## 1 使用MyBatis-Generator
+## 2.2 ExampleClass 使用方法
+
+​	example class是用来动态构建where子句，example class中包含一个内部静态类Criteria（条件类），这个Criteria中包含一系列可能用到的where子句，example class 可以包含一系列Criteria 对象。
+
+​	Criteria对象可以通过`createCriteria`方法或者是`or`方法创建，第一次创建Criteria时会被自动加到Criteria list中，`or`方法会把所有`Criteria`类加到list中。
+
+​    配置好where子句就可以textMapper.selectByExample(exampleClass)查询。
+
+### 2.2.1 简单查询
+
+~~~java
+TestTableExample example = new TestTableExample();
+example.createCriteria().andField1EqualTo(5)
+// 或者
+TestTableExample example = new TestTableExample();
+example.or().andField1EqualTo(5);
+
+// 上面创建了where field1 = 5
+~~~
+
+### 2.2.2 复杂查询
+
+~~~java
+TestTableExample example = new TestTableExample();
+
+example.or()
+    .andField1EqualTo(5)
+    .andField2IsNull();
+
+example.or()
+    .andField3NotEqualTo(9)
+    .andField4IsNotNull();
+
+List<Integer> field5Values = new ArrayList<Integer>();
+field5Values.add(8);
+field5Values.add(11);
+field5Values.add(14);
+field5Values.add(22);
+
+example.or()
+    .andField5In(field5Values);
+
+example.or()
+    .andField6Between(3, 7);
+~~~
+
+上面的例子创建了下面的where子句
+
+~~~sql
+where (field1 = 5 and field2 is null)
+    or (field3 <> 9 and field4 is not null)
+    or (field5 in (8, 11, 14, 22))
+    or (field6 between 3 and 7)
+~~~
+
+example.setDistinct(true)即可实现去重。
+
+## F .拓展
+
+### @Param()
+
+~~~java
+@Select("select entity from table where userId = ${userId} ")
+public int selectEntity(@Param("userId") int userId);
+~~~
+
+当使用了使用@Param注解来声明参数时，如果使用 #{} 或 ${} 的方式都可以。当不使用@Param注解来声明参数时，必须使用使用 #{}方式。如果使用 ${} 的方式，会报错，而#{}拿到值之后，拼装sql，会自动对值添加引号。${}则把拿到的值直接拼装进sql，如果需要加单引号，必须手动添加，一般用于动态传入表名或字段名使用，#{}传参能防止sql注入。
+
+### MyBatis Dynamic SQL
+
+[ExampleClassNote](https://mybatis.org/generator/generatedobjects/exampleClassUsage.html)
+
+[MyBatisDynamicSQL](https://mybatis.org/mybatis-dynamic-sql/docs/introduction.html)
 

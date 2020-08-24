@@ -267,10 +267,10 @@ https://juejin.im/entry/6844903802215071758
    ~~~
 
    ## Mybatis-Generator 插件
-   ​	详细文章链接（https://juejin.im/post/6844903982582743048#heading-20）    
+   ​	详细文章链接（https://juejin.im/post/6844903982582743048）    
    
    ​	前提条件：创建好数据库以及数据表。
-     
+   
    
 
 
