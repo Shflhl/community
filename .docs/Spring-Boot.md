@@ -1,3 +1,7 @@
+[TOC]
+
+
+
 # Spring Boot
 
 ## 1 Spring Boot中常用注解
@@ -170,6 +174,37 @@ logging.level.org.apache.commons.dbcp2= DEBUG
 
 3. @Scheduled配置规则
    - cron属性：按cron规则执行
+     - [cron配置](https://blog.csdn.net/m0_37179470/article/details/81271607)
    - fixedRate 属性：以固定时间执行
    - fixedDelay 属性：上次执行完毕后延迟再执行
    - initialDelay 属性：第一次延时多久执行执行，需要配合fixedRate和fixedDelay使用
+
+### 2.4 Spring Boot 取properties的方式
+
+1. application.properties
+
+~~~properties
+spring.profiles.active=prod
+url.lm=editMessage
+url.orgCode=100120171116031838
+url.ybd=http://www.test.com/sales/
+url.PostUrl=/LmCpa/apply/applyInfo  
+~~~
+
+2. java 注入值
+
+~~~java
+@Component  
+public class ManyProperties {  
+   @Value("${url.lm}")  
+   private String lmPage;  
+   @Value("${url.ybd}")  
+   private String sendYbdUrl;  
+   @Value("${url.orgCode}")  
+   private String orgCode;  
+   @Value("${url.PostUrl}")  
+   private String PostUrl;  
+   // 省列getter setter 方法  
+}  
+~~~
+

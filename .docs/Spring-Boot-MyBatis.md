@@ -1,4 +1,8 @@
-# Mybatis - Spring Boot
+[Toc]
+
+
+
+# 1 Mybatis - Spring Boot
 
 ## 1 前言
 
@@ -23,6 +27,8 @@
 ~~~
 
 ### 2.2 配置数据源<连接池>
+
+在Spring Boot项目中，如果在application.properties中配置了driver-class-name、url、username、password时会自动配置一个数据源，相当于在容器中注册了一个数据源。
 
 ~~~yaml
 spring: 
@@ -254,7 +260,7 @@ public class AccountService {
 - 自动检查Spring Boot的数据源配置并构建DataSource对象（**Spring Boot自带数据源，application.properties需要配置数据源信息<username，password，url，Driver>**）
 - 通过SqlSessionFactoryBean使用数据源构建并注册SqlSessionFactory对象
 - 从SqlSessionFactory中创建并注册一个SqlSessionTemplate实例，其实就是构建一个SqlSession对象
-- 自动扫描接口映射器，并将这些映射器与SqlSessionTemplate实例进行关联，同时将它们注册到Spring容器中。（可以依赖注入调用方法）
+- 自动扫描接口映射器（就是添加@Mapper的类），并将这些映射器与SqlSessionTemplate实例进行关联，同时将它们注册到Spring容器中。（可以依赖注入调用方法）
 
 ~~~xml
 <!-- 在Spring Boot中集成MyBatis -->
