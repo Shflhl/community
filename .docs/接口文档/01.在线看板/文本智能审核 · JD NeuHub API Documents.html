@@ -1,0 +1,4831 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://aidoc.jd.com/censor/censor_text.html -->
+<html lang="zh-hans"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        
+        <title>文本智能审核 · JD NeuHub API Documents</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Heguannan">
+        
+        
+    
+    <link rel="stylesheet" href="./文本智能审核 · JD NeuHub API Documents_files/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="./文本智能审核 · JD NeuHub API Documents_files/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="./文本智能审核 · JD NeuHub API Documents_files/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="./文本智能审核 · JD NeuHub API Documents_files/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="./文本智能审核 · JD NeuHub API Documents_files/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="./文本智能审核 · JD NeuHub API Documents_files/website(1).css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://aidoc.jd.com/gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="https://aidoc.jd.com/gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="https://aidoc.jd.com/censor/censor_ad.html">
+    
+    
+    <link rel="prev" href="https://aidoc.jd.com/censor/censor_image.html">
+    
+
+    </head>
+    <body>
+        
+<div class="book without-animation with-summary font-size-2 font-family-1">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索">
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">新手指南</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="https://aidoc.jd.com/">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../user/flow.html">
+            
+                <a href="https://aidoc.jd.com/user/flow.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    接入流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../user/auth.html">
+            
+                <a href="https://aidoc.jd.com/user/auth.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    接口鉴权
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../user/returncode.html">
+            
+                <a href="https://aidoc.jd.com/user/returncode.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    返回码说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user/FAQ.html">
+            
+                <a href="https://aidoc.jd.com/user/FAQ.html">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../user/platformProtocol.html">
+            
+                <a href="https://aidoc.jd.com/user/platformProtocol.html">
+            
+                    
+                        <b>1.6.</b>
+                    
+                    服务协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../user/Intl.html">
+            
+                <a href="https://aidoc.jd.com/user/Intl.html">
+            
+                    
+                        <b>1.7.</b>
+                    
+                    国际站服务协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../other/signin.html">
+            
+                <a href="https://aidoc.jd.com/other/signin.html">
+            
+                    
+                        <b>1.8.</b>
+                    
+                    NeuHub平台签到活动说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../other/JDAI_Online_training_service_agreement.html">
+            
+                <a href="https://aidoc.jd.com/other/JDAI_Online_training_service_agreement.html">
+            
+                    
+                        <b>1.9.</b>
+                    
+                    京东AI在线实训服务协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">服务商指南</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../isv/condition.html">
+            
+                <a href="https://aidoc.jd.com/isv/condition.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    入驻条件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../isv/flow.html">
+            
+                <a href="https://aidoc.jd.com/isv/flow.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    入驻流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../isv/rights.html">
+            
+                <a href="https://aidoc.jd.com/isv/rights.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    服务商权益
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../isv/protocol.html">
+            
+                <a href="https://aidoc.jd.com/isv/protocol.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    服务商入驻协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../isv/productaccess.html">
+            
+                <a href="https://aidoc.jd.com/isv/productaccess.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    商品接入类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../isv/storesettings.html">
+            
+                <a href="https://aidoc.jd.com/isv/storesettings.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    店铺设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../isv/productdetail.html">
+            
+                <a href="https://aidoc.jd.com/isv/productdetail.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    商详设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../isv/customerservice.html">
+            
+                <a href="https://aidoc.jd.com/isv/customerservice.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    客服设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../isv/ordertracking.html">
+            
+                <a href="https://aidoc.jd.com/isv/ordertracking.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    订单查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../isv/settlement.html">
+            
+                <a href="https://aidoc.jd.com/isv/settlement.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    结算管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="../isv/refundrule.html">
+            
+                <a href="https://aidoc.jd.com/isv/refundrule.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    退款规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="../isv/refundreview.html">
+            
+                <a href="https://aidoc.jd.com/isv/refundreview.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    退款审核说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="../isv/channelRegistrationAgreement.html">
+            
+                <a href="https://aidoc.jd.com/isv/channelRegistrationAgreement.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    渠道商注册协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="../isv/companyWallet.html">
+            
+                <a href="https://aidoc.jd.com/isv/companyWallet.html">
+            
+                    
+                        <b>2.14.</b>
+                    
+                    企业钱包开通流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="../user/qpsWarnConfig.html">
+            
+                <a href="https://aidoc.jd.com/user/qpsWarnConfig.html">
+            
+                    
+                        <b>2.15.</b>
+                    
+                    监控预警
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">计算机视觉</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1">
+            
+                <span>
+            
+                    
+                        <b>3.1.</b>
+                    
+                    人脸识别
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../face/faceProp.html">
+            
+                <a href="https://aidoc.jd.com/face/faceProp.html">
+            
+                    
+                        <b>3.1.1.</b>
+                    
+                    人脸检测与属性分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../face/detect-jdd.html">
+            
+                <a href="https://aidoc.jd.com/face/detect-jdd.html">
+            
+                    
+                        <b>3.1.2.</b>
+                    
+                    人脸检测与属性分析京东数科版
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../face/faceCompare.html">
+            
+                <a href="https://aidoc.jd.com/face/faceCompare.html">
+            
+                    
+                        <b>3.1.3.</b>
+                    
+                    人脸对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../face/compare-jdd.html">
+            
+                <a href="https://aidoc.jd.com/face/compare-jdd.html">
+            
+                    
+                        <b>3.1.4.</b>
+                    
+                    人脸对比京东数科版
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../face/faceAntispoof.html">
+            
+                <a href="https://aidoc.jd.com/face/faceAntispoof.html">
+            
+                    
+                        <b>3.1.5.</b>
+                    
+                    人脸活体检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../face/face_parser.html">
+            
+                <a href="https://aidoc.jd.com/face/face_parser.html">
+            
+                    
+                        <b>3.1.6.</b>
+                    
+                    人脸解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7">
+            
+                <span>
+            
+                    
+                        <b>3.1.7.</b>
+                    
+                    人脸库管理
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.7.1" data-path="../face/groupCreate.html">
+            
+                <a href="https://aidoc.jd.com/face/groupCreate.html">
+            
+                    
+                        <b>3.1.7.1.</b>
+                    
+                    创建分组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7.2" data-path="../face/groupFetch.html">
+            
+                <a href="https://aidoc.jd.com/face/groupFetch.html">
+            
+                    
+                        <b>3.1.7.2.</b>
+                    
+                    获取分组列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7.3" data-path="../face/groupUpdate.html">
+            
+                <a href="https://aidoc.jd.com/face/groupUpdate.html">
+            
+                    
+                        <b>3.1.7.3.</b>
+                    
+                    更新分组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7.4" data-path="../face/groupDelete.html">
+            
+                <a href="https://aidoc.jd.com/face/groupDelete.html">
+            
+                    
+                        <b>3.1.7.4.</b>
+                    
+                    删除分组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7.5" data-path="../face/faceCreate.html">
+            
+                <a href="https://aidoc.jd.com/face/faceCreate.html">
+            
+                    
+                        <b>3.1.7.5.</b>
+                    
+                    创建人脸
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7.6" data-path="../face/faceFetch.html">
+            
+                <a href="https://aidoc.jd.com/face/faceFetch.html">
+            
+                    
+                        <b>3.1.7.6.</b>
+                    
+                    获取人脸
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7.7" data-path="../face/faceUpdate.html">
+            
+                <a href="https://aidoc.jd.com/face/faceUpdate.html">
+            
+                    
+                        <b>3.1.7.7.</b>
+                    
+                    更新人脸
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7.8" data-path="../face/faceDelete.html">
+            
+                <a href="https://aidoc.jd.com/face/faceDelete.html">
+            
+                    
+                        <b>3.1.7.8.</b>
+                    
+                    删除人脸
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7.9" data-path="../face/faceSearch.html">
+            
+                <a href="https://aidoc.jd.com/face/faceSearch.html">
+            
+                    
+                        <b>3.1.7.9.</b>
+                    
+                    人脸1比N搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.8" data-path="../face/mask_detect.html">
+            
+                <a href="https://aidoc.jd.com/face/mask_detect.html">
+            
+                    
+                        <b>3.1.8.</b>
+                    
+                    人脸口罩识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter expanded" data-level="3.2">
+            
+                <span>
+            
+                    
+                        <b>3.2.</b>
+                    
+                    内容审核
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="censor_image.html">
+            
+                <a href="https://aidoc.jd.com/censor/censor_image.html">
+            
+                    
+                        <b>3.2.1.</b>
+                    
+                    通用图片审核
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active expanded" data-level="3.2.2" data-path="censor_text.html">
+            
+                <a href="https://aidoc.jd.com/censor/censor_text.html">
+            
+                    
+                        <b>3.2.2.</b>
+                    
+                    文本智能审核
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="censor_ad.html">
+            
+                <a href="https://aidoc.jd.com/censor/censor_ad.html">
+            
+                    
+                        <b>3.2.3.</b>
+                    
+                    广告检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4" data-path="../image/sexy.html">
+            
+                <a href="https://aidoc.jd.com/image/sexy.html">
+            
+                    
+                        <b>3.2.4.</b>
+                    
+                    智能鉴黄
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5" data-path="../image/leaderRec.html">
+            
+                <a href="https://aidoc.jd.com/image/leaderRec.html">
+            
+                    
+                        <b>3.2.5.</b>
+                    
+                    特定人物识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter expanded" data-level="3.3">
+            
+                <span>
+            
+                    
+                        <b>3.3.</b>
+                    
+                    文字识别
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter expanded" data-level="3.3.1" data-path="../ocr/idcard.html">
+            
+                <a href="https://aidoc.jd.com/ocr/idcard.html">
+            
+                    
+                        <b>3.3.1.</b>
+                    
+                    身份证识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter expanded" data-level="3.3.2" data-path="../ocr/vehicle.html">
+            
+                <a href="https://aidoc.jd.com/ocr/vehicle.html">
+            
+                    
+                        <b>3.3.2.</b>
+                    
+                    行驶证识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter expanded" data-level="3.3.3" data-path="../ocr/driver.html">
+            
+                <a href="https://aidoc.jd.com/ocr/driver.html">
+            
+                    
+                        <b>3.3.3.</b>
+                    
+                    驾驶证识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter expanded" data-level="3.3.4" data-path="../ocr/universal.html">
+            
+                <a href="https://aidoc.jd.com/ocr/universal.html">
+            
+                    
+                        <b>3.3.4.</b>
+                    
+                    通用文字识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.5" data-path="../ocr/general_ocr.html">
+            
+                <a href="https://aidoc.jd.com/ocr/general_ocr.html">
+            
+                    
+                        <b>3.3.5.</b>
+                    
+                    通用文字识别(生僻字版)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter expanded" data-level="3.3.6" data-path="../ocr/invoice.html">
+            
+                <a href="https://aidoc.jd.com/ocr/invoice.html">
+            
+                    
+                        <b>3.3.6.</b>
+                    
+                    增值税发票识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter expanded" data-level="3.3.7" data-path="../ocr/bankcard.html">
+            
+                <a href="https://aidoc.jd.com/ocr/bankcard.html">
+            
+                    
+                        <b>3.3.7.</b>
+                    
+                    银行卡识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter expanded" data-level="3.3.8" data-path="../ocr/business.html">
+            
+                <a href="https://aidoc.jd.com/ocr/business.html">
+            
+                    
+                        <b>3.3.8.</b>
+                    
+                    营业执照识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter expanded" data-level="3.3.9" data-path="../ocr/plate.html">
+            
+                <a href="https://aidoc.jd.com/ocr/plate.html">
+            
+                    
+                        <b>3.3.9.</b>
+                    
+                    车牌识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4">
+            
+                <span>
+            
+                    
+                        <b>3.4.</b>
+                    
+                    人体识别
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="../body/pose.html">
+            
+                <a href="https://aidoc.jd.com/body/pose.html">
+            
+                    
+                        <b>3.4.1.</b>
+                    
+                    人体关键点检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.2" data-path="../body/human_detect.html">
+            
+                <a href="https://aidoc.jd.com/body/human_detect.html">
+            
+                    
+                        <b>3.4.2.</b>
+                    
+                    人体检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.3" data-path="../body/human_parsing.html">
+            
+                <a href="https://aidoc.jd.com/body/human_parsing.html">
+            
+                    
+                        <b>3.4.3.</b>
+                    
+                    细粒度人像分割
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.4" data-path="../body/personreid.html">
+            
+                <a href="https://aidoc.jd.com/body/personreid.html">
+            
+                    
+                        <b>3.4.4.</b>
+                    
+                    行人重识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5">
+            
+                <span>
+            
+                    
+                        <b>3.5.</b>
+                    
+                    视频理解
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="../video/face_swap.html">
+            
+                <a href="https://aidoc.jd.com/video/face_swap.html">
+            
+                    
+                        <b>3.5.1.</b>
+                    
+                    视频换脸
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.2" data-path="../video/face_swap_search.html">
+            
+                <a href="https://aidoc.jd.com/video/face_swap_search.html">
+            
+                    
+                        <b>3.5.2.</b>
+                    
+                    查询换脸结果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.3" data-path="../video/video_editor.html">
+            
+                <a href="https://aidoc.jd.com/video/video_editor.html">
+            
+                    
+                        <b>3.5.3.</b>
+                    
+                    视频摘要
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6">
+            
+                <span>
+            
+                    
+                        <b>3.6.</b>
+                    
+                    图像处理
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.6.1" data-path="../image/snapshop.html">
+            
+                <a href="https://aidoc.jd.com/image/snapshop.html">
+            
+                    
+                        <b>3.6.1.</b>
+                    
+                    拍照购
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.2" data-path="../image/garbageClassification.html">
+            
+                <a href="https://aidoc.jd.com/image/garbageClassification.html">
+            
+                    
+                        <b>3.6.2.</b>
+                    
+                    垃圾分类识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.3" data-path="../image/food.html">
+            
+                <a href="https://aidoc.jd.com/image/food.html">
+            
+                    
+                        <b>3.6.3.</b>
+                    
+                    菜品识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.4" data-path="../image/selfie_segmentation.html">
+            
+                <a href="https://aidoc.jd.com/image/selfie_segmentation.html">
+            
+                    
+                        <b>3.6.4.</b>
+                    
+                    人像分割
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.5" data-path="../image/recognize_product.html">
+            
+                <a href="https://aidoc.jd.com/image/recognize_product.html">
+            
+                    
+                        <b>3.6.5.</b>
+                    
+                    通用商品识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.6" data-path="../image/medical_material_recognize.html">
+            
+                <a href="https://aidoc.jd.com/image/medical_material_recognize.html">
+            
+                    
+                        <b>3.6.6.</b>
+                    
+                    疫情物资识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.7" data-path="../image/dog_class.html">
+            
+                <a href="https://aidoc.jd.com/image/dog_class.html">
+            
+                    
+                        <b>3.6.7.</b>
+                    
+                    犬类识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.8" data-path="../image/color_extraction.html">
+            
+                <a href="https://aidoc.jd.com/image/color_extraction.html">
+            
+                    
+                        <b>3.6.8.</b>
+                    
+                    颜色识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.9" data-path="../shelf/shelf_detection.html">
+            
+                <a href="https://aidoc.jd.com/shelf/shelf_detection.html">
+            
+                    
+                        <b>3.6.9.</b>
+                    
+                    货物商品检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7">
+            
+                <span>
+            
+                    
+                        <b>3.7.</b>
+                    
+                    交通识别
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.7.1" data-path="../traffic/vehicle_detection.html">
+            
+                <a href="https://aidoc.jd.com/traffic/vehicle_detection.html">
+            
+                    
+                        <b>3.7.1.</b>
+                    
+                    车辆识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.2" data-path="../image/car_class.html">
+            
+                <a href="https://aidoc.jd.com/image/car_class.html">
+            
+                    
+                        <b>3.7.2.</b>
+                    
+                    车型识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.3" data-path="../image/vehicle_parser.html">
+            
+                <a href="https://aidoc.jd.com/image/vehicle_parser.html">
+            
+                    
+                        <b>3.7.3.</b>
+                    
+                    车辆解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8">
+            
+                <span>
+            
+                    
+                        <b>3.8.</b>
+                    
+                    通用图片搜索
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.8.1" data-path="../imageSearch/image_search.html">
+            
+                <a href="https://aidoc.jd.com/imageSearch/image_search.html">
+            
+                    
+                        <b>3.8.1.</b>
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.2" data-path="../imageSearch/insert_data.html">
+            
+                <a href="https://aidoc.jd.com/imageSearch/insert_data.html">
+            
+                    
+                        <b>3.8.2.</b>
+                    
+                    图片入库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.3" data-path="../imageSearch/fetch_task_status.html">
+            
+                <a href="https://aidoc.jd.com/imageSearch/fetch_task_status.html">
+            
+                    
+                        <b>3.8.3.</b>
+                    
+                    任务状态查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.4" data-path="../imageSearch/search.html">
+            
+                <a href="https://aidoc.jd.com/imageSearch/search.html">
+            
+                    
+                        <b>3.8.4.</b>
+                    
+                    图片搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.5">
+            
+                <span>
+            
+                    
+                        <b>3.8.5.</b>
+                    
+                    图片管理
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.8.5.1" data-path="../imageSearch/fetch_infos.html">
+            
+                <a href="https://aidoc.jd.com/imageSearch/fetch_infos.html">
+            
+                    
+                        <b>3.8.5.1.</b>
+                    
+                    图片信息查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.5.2" data-path="../imageSearch/update_infos.html">
+            
+                <a href="https://aidoc.jd.com/imageSearch/update_infos.html">
+            
+                    
+                        <b>3.8.5.2.</b>
+                    
+                    图片信息更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.5.3" data-path="../imageSearch/delete_image.html">
+            
+                <a href="https://aidoc.jd.com/imageSearch/delete_image.html">
+            
+                    
+                        <b>3.8.5.3.</b>
+                    
+                    图片删除
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.5.4" data-path="../imageSearch/list_collection.html">
+            
+                <a href="https://aidoc.jd.com/imageSearch/list_collection.html">
+            
+                    
+                        <b>3.8.5.4.</b>
+                    
+                    库列表查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9">
+            
+                <span>
+            
+                    
+                        <b>3.9.</b>
+                    
+                    商品图片搜索
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.9.1" data-path="../productSearch/introduction.html">
+            
+                <a href="https://aidoc.jd.com/productSearch/introduction.html">
+            
+                    
+                        <b>3.9.1.</b>
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.2" data-path="../productSearch/create_product.html">
+            
+                <a href="https://aidoc.jd.com/productSearch/create_product.html">
+            
+                    
+                        <b>3.9.2.</b>
+                    
+                    创建商品
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.3" data-path="../productSearch/add_image.html">
+            
+                <a href="https://aidoc.jd.com/productSearch/add_image.html">
+            
+                    
+                        <b>3.9.3.</b>
+                    
+                    商品图入库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.4" data-path="../productSearch/task_status.html">
+            
+                <a href="https://aidoc.jd.com/productSearch/task_status.html">
+            
+                    
+                        <b>3.9.4.</b>
+                    
+                    入库状态查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.5" data-path="../productSearch/product_search.html">
+            
+                <a href="https://aidoc.jd.com/productSearch/product_search.html">
+            
+                    
+                        <b>3.9.5.</b>
+                    
+                    商品图片搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.6" data-path="../productSearch/image_info.html">
+            
+                <a href="https://aidoc.jd.com/productSearch/image_info.html">
+            
+                    
+                        <b>3.9.6.</b>
+                    
+                    商品图片信息查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.7" data-path="../productSearch/delete_image.html">
+            
+                <a href="https://aidoc.jd.com/productSearch/delete_image.html">
+            
+                    
+                        <b>3.9.7.</b>
+                    
+                    商品图片删除
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.8" data-path="../productSearch/delete_product.html">
+            
+                <a href="https://aidoc.jd.com/productSearch/delete_product.html">
+            
+                    
+                        <b>3.9.8.</b>
+                    
+                    商品删除
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.9" data-path="../productSearch/delete_collection.html">
+            
+                <a href="https://aidoc.jd.com/productSearch/delete_collection.html">
+            
+                    
+                        <b>3.9.9.</b>
+                    
+                    商品库删除
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">语音技术</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1">
+            
+                <span>
+            
+                    
+                        <b>4.1.</b>
+                    
+                    语音识别
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../speech/asr.html">
+            
+                <a href="https://aidoc.jd.com/speech/asr.html">
+            
+                    
+                        <b>4.1.1.</b>
+                    
+                    短语音识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../speech/JDASR_Speech_Android.html">
+            
+                <a href="https://aidoc.jd.com/speech/JDASR_Speech_Android.html">
+            
+                    
+                        <b>4.1.2.</b>
+                    
+                    语音识别 Android SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../speech/JDASR_Speech_iOS.html">
+            
+                <a href="https://aidoc.jd.com/speech/JDASR_Speech_iOS.html">
+            
+                    
+                        <b>4.1.3.</b>
+                    
+                    语音识别 iOS SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../speech/JDASR_OFFLINE_Speech_Android.html">
+            
+                <a href="https://aidoc.jd.com/speech/JDASR_OFFLINE_Speech_Android.html">
+            
+                    
+                        <b>4.1.4.</b>
+                    
+                    离线语音识别 Android SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../speech/realtime_asr.html">
+            
+                <a href="https://aidoc.jd.com/speech/realtime_asr.html">
+            
+                    
+                        <b>4.1.5.</b>
+                    
+                    实时语音识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2">
+            
+                <span>
+            
+                    
+                        <b>4.2.</b>
+                    
+                    录音文件识别
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="../speech/audio_file_recognition.html">
+            
+                <a href="https://aidoc.jd.com/speech/audio_file_recognition.html">
+            
+                    
+                        <b>4.2.1.</b>
+                    
+                    录音文件识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3">
+            
+                <span>
+            
+                    
+                        <b>4.3.</b>
+                    
+                    语音合成
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.3.1" data-path="../speech/tts.html">
+            
+                <a href="https://aidoc.jd.com/speech/tts.html">
+            
+                    
+                        <b>4.3.1.</b>
+                    
+                    语音合成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.2" data-path="../speech/tts_vip.html">
+            
+                <a href="https://aidoc.jd.com/speech/tts_vip.html">
+            
+                    
+                        <b>4.3.2.</b>
+                    
+                    语音合成-精品版
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.3" data-path="../speech/JDTTS_Speech_Android.html">
+            
+                <a href="https://aidoc.jd.com/speech/JDTTS_Speech_Android.html">
+            
+                    
+                        <b>4.3.3.</b>
+                    
+                    语音合成 Android SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.4" data-path="../speech/JDTTS_Speech_iOS.html">
+            
+                <a href="https://aidoc.jd.com/speech/JDTTS_Speech_iOS.html">
+            
+                    
+                        <b>4.3.4.</b>
+                    
+                    语音合成 IOS MAC SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.5" data-path="../speech/JDTTS_Speech_Java.html">
+            
+                <a href="https://aidoc.jd.com/speech/JDTTS_Speech_Java.html">
+            
+                    
+                        <b>4.3.5.</b>
+                    
+                    语音合成 JAVA SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.6" data-path="../speech/ssml.html">
+            
+                <a href="https://aidoc.jd.com/speech/ssml.html">
+            
+                    
+                        <b>4.3.6.</b>
+                    
+                    语音合成标记语言 (SSML)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.7" data-path="../speech/tts-stream.html">
+            
+                <a href="https://aidoc.jd.com/speech/tts-stream.html">
+            
+                    
+                        <b>4.3.7.</b>
+                    
+                    语音合成流式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4">
+            
+                <span>
+            
+                    
+                        <b>4.4.</b>
+                    
+                    声纹识别
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.4.1" data-path="../speech/vpr.html">
+            
+                <a href="https://aidoc.jd.com/speech/vpr.html">
+            
+                    
+                        <b>4.4.1.</b>
+                    
+                    声纹识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">自然语言处理</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1">
+            
+                <span>
+            
+                    
+                        <b>5.1.</b>
+                    
+                    语音基础技术
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../nlp/lexer.html">
+            
+                <a href="https://aidoc.jd.com/nlp/lexer.html">
+            
+                    
+                        <b>5.1.1.</b>
+                    
+                    词法分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../nlp/systax.html">
+            
+                <a href="https://aidoc.jd.com/nlp/systax.html">
+            
+                    
+                        <b>5.1.2.</b>
+                    
+                    句法分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2">
+            
+                <span>
+            
+                    
+                        <b>5.2.</b>
+                    
+                    语义理解
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../nlp/sentiment.html">
+            
+                <a href="https://aidoc.jd.com/nlp/sentiment.html">
+            
+                    
+                        <b>5.2.1.</b>
+                    
+                    情感分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../nlp/sentiment-three-own.html">
+            
+                <a href="https://aidoc.jd.com/nlp/sentiment-three-own.html">
+            
+                    
+                        <b>5.2.2.</b>
+                    
+                    评论倾向分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.3" data-path="../nlp/similarity.html">
+            
+                <a href="https://aidoc.jd.com/nlp/similarity.html">
+            
+                    
+                        <b>5.2.3.</b>
+                    
+                    短文本相似度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.4" data-path="../nlp/textclassification.html">
+            
+                <a href="https://aidoc.jd.com/nlp/textclassification.html">
+            
+                    
+                        <b>5.2.4.</b>
+                    
+                    文本分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.5" data-path="../nlp/comment.html">
+            
+                <a href="https://aidoc.jd.com/nlp/comment.html">
+            
+                    
+                        <b>5.2.5.</b>
+                    
+                    评论观点抽取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.6" data-path="../nlp/Fairy_Dialog/fairy_dialog.html">
+            
+                <a href="https://aidoc.jd.com/nlp/Fairy_Dialog/fairy_dialog.html">
+            
+                    
+                        <b>5.2.6.</b>
+                    
+                    人机对话
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.7" data-path="../nlp/word-vector.html">
+            
+                <a href="https://aidoc.jd.com/nlp/word-vector.html">
+            
+                    
+                        <b>5.2.7.</b>
+                    
+                    词向量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.8" data-path="../nlp/word-similarity.html">
+            
+                <a href="https://aidoc.jd.com/nlp/word-similarity.html">
+            
+                    
+                        <b>5.2.8.</b>
+                    
+                    词义相似度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.9" data-path="../nlp/intelligent-triage.html">
+            
+                <a href="https://aidoc.jd.com/nlp/intelligent-triage.html">
+            
+                    
+                        <b>5.2.9.</b>
+                    
+                    智能分诊
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.10" data-path="../nlp/intelligent-creation.html">
+            
+                <a href="https://aidoc.jd.com/nlp/intelligent-creation.html">
+            
+                    
+                        <b>5.2.10.</b>
+                    
+                    智能写作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.11" data-path="../nlp/nmt.html">
+            
+                <a href="https://aidoc.jd.com/nlp/nmt.html">
+            
+                    
+                        <b>5.2.11.</b>
+                    
+                    机器翻译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.12" data-path="../nlp/chatbot.html">
+            
+                <a href="https://aidoc.jd.com/nlp/chatbot.html">
+            
+                    
+                        <b>5.2.12.</b>
+                    
+                    闲聊
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.13" data-path="../nlp/IntelligentTextParsing.html">
+            
+                <a href="https://aidoc.jd.com/nlp/IntelligentTextParsing.html">
+            
+                    
+                        <b>5.2.13.</b>
+                    
+                    地址识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.14" data-path="../nlp/custom-intelligent-creation.html">
+            
+                <a href="https://aidoc.jd.com/nlp/custom-intelligent-creation.html">
+            
+                    
+                        <b>5.2.14.</b>
+                    
+                    自定义智能写作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.15" data-path="../nlp/language_smooth.html">
+            
+                <a href="https://aidoc.jd.com/nlp/language_smooth.html">
+            
+                    
+                        <b>5.2.15.</b>
+                    
+                    文本流畅度API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.16" data-path="../nlp/corpus_synonyms.html">
+            
+                <a href="https://aidoc.jd.com/nlp/corpus_synonyms.html">
+            
+                    
+                        <b>5.2.16.</b>
+                    
+                    同义词API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.17" data-path="../nlp/corpus_aggregation.html">
+            
+                <a href="https://aidoc.jd.com/nlp/corpus_aggregation.html">
+            
+                    
+                        <b>5.2.17.</b>
+                    
+                    聚类API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.18" data-path="../nlp/language_cloze.html">
+            
+                <a href="https://aidoc.jd.com/nlp/language_cloze.html">
+            
+                    
+                        <b>5.2.18.</b>
+                    
+                    语言模型填空API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">机器学习</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1">
+            
+                <span>
+            
+                    
+                        <b>6.1.</b>
+                    
+                    市场洞察
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../c2m/competeAnalysis.html">
+            
+                <a href="https://aidoc.jd.com/c2m/competeAnalysis.html">
+            
+                    
+                        <b>6.1.1.</b>
+                    
+                    商品竞争力分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../c2m/brandCompeteAnalyse.html">
+            
+                <a href="https://aidoc.jd.com/c2m/brandCompeteAnalyse.html">
+            
+                    
+                        <b>6.1.2.</b>
+                    
+                    品牌竞争力分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../c2m/marketSegmentationAnalyse.html">
+            
+                <a href="https://aidoc.jd.com/c2m/marketSegmentationAnalyse.html">
+            
+                    
+                        <b>6.1.3.</b>
+                    
+                    细分市场划分
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2">
+            
+                <span>
+            
+                    
+                        <b>6.2.</b>
+                    
+                    反向定制
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.2.1" data-path="../c2m/oldUpgrade.html">
+            
+                <a href="https://aidoc.jd.com/c2m/oldUpgrade.html">
+            
+                    
+                        <b>6.2.1.</b>
+                    
+                    老品升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.2" data-path="../c2m/newProductCustom.html">
+            
+                <a href="https://aidoc.jd.com/c2m/newProductCustom.html">
+            
+                    
+                        <b>6.2.2.</b>
+                    
+                    新品定制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">AI市场</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1">
+            
+                <span>
+            
+                    
+                        <b>7.1.</b>
+                    
+                    法狗狗
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="../market/fagougou/phrasedig.html">
+            
+                <a href="https://aidoc.jd.com/market/fagougou/phrasedig.html">
+            
+                    
+                        <b>7.1.1.</b>
+                    
+                    短语挖掘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2">
+            
+                <span>
+            
+                    
+                        <b>7.2.</b>
+                    
+                    酒咔嚓
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.2.1" data-path="../market/9kacha/wineRec.html">
+            
+                <a href="https://aidoc.jd.com/market/9kacha/wineRec.html">
+            
+                    
+                        <b>7.2.1.</b>
+                    
+                    酒标识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3">
+            
+                <span>
+            
+                    
+                        <b>7.3.</b>
+                    
+                    极睿科技
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.3.1" data-path="../market/infimind/apparelRec.html">
+            
+                <a href="https://aidoc.jd.com/market/infimind/apparelRec.html">
+            
+                    
+                        <b>7.3.1.</b>
+                    
+                    服饰识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4">
+            
+                <span>
+            
+                    
+                        <b>7.4.</b>
+                    
+                    Versa
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.4.1" data-path="../market/Versa/segment_instance_human.html">
+            
+                <a href="https://aidoc.jd.com/market/Versa/segment_instance_human.html">
+            
+                    
+                        <b>7.4.1.</b>
+                    
+                    人像分割
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4.2" data-path="../market/Versa/segment_instance_separate.html">
+            
+                <a href="https://aidoc.jd.com/market/Versa/segment_instance_separate.html">
+            
+                    
+                        <b>7.4.2.</b>
+                    
+                    实例分割
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4.3" data-path="../market/Versa/render_image.html">
+            
+                <a href="https://aidoc.jd.com/market/Versa/render_image.html">
+            
+                    
+                        <b>7.4.3.</b>
+                    
+                    风格迁移
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4.4" data-path="../market/Versa/inpainting_image.html">
+            
+                <a href="https://aidoc.jd.com/market/Versa/inpainting_image.html">
+            
+                    
+                        <b>7.4.4.</b>
+                    
+                    智能填充
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5">
+            
+                <span>
+            
+                    
+                        <b>7.5.</b>
+                    
+                    码上赢
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.5.1" data-path="../market/WinWin/item_product_get.html">
+            
+                <a href="https://aidoc.jd.com/market/WinWin/item_product_get.html">
+            
+                    
+                        <b>7.5.1.</b>
+                    
+                    条码查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6">
+            
+                <span>
+            
+                    
+                        <b>7.6.</b>
+                    
+                    天壤AI
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.6.1" data-path="../market/TRAI/business_licence.html">
+            
+                <a href="https://aidoc.jd.com/market/TRAI/business_licence.html">
+            
+                    
+                        <b>7.6.1.</b>
+                    
+                    营业执照识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6.2" data-path="../market/TRAI/idcard.html">
+            
+                <a href="https://aidoc.jd.com/market/TRAI/idcard.html">
+            
+                    
+                        <b>7.6.2.</b>
+                    
+                    身份证识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6.3" data-path="../market/TRAI/seal_detect.html">
+            
+                <a href="https://aidoc.jd.com/market/TRAI/seal_detect.html">
+            
+                    
+                        <b>7.6.3.</b>
+                    
+                    印章检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6.4" data-path="../market/TRAI/finance_report.html">
+            
+                <a href="https://aidoc.jd.com/market/TRAI/finance_report.html">
+            
+                    
+                        <b>7.6.4.</b>
+                    
+                    财务报表识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6.5" data-path="../market/TRAI/Medical_invoice.html">
+            
+                <a href="https://aidoc.jd.com/market/TRAI/Medical_invoice.html">
+            
+                    
+                        <b>7.6.5.</b>
+                    
+                    医疗发票识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6.6" data-path="../market/TRAI/opening_permit.html">
+            
+                <a href="https://aidoc.jd.com/market/TRAI/opening_permit.html">
+            
+                    
+                        <b>7.6.6.</b>
+                    
+                    开户许可证识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6.7" data-path="../market/TRAI/vat_invoice.html">
+            
+                <a href="https://aidoc.jd.com/market/TRAI/vat_invoice.html">
+            
+                    
+                        <b>7.6.7.</b>
+                    
+                    增值税发票识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7">
+            
+                <span>
+            
+                    
+                        <b>7.7.</b>
+                    
+                    LINGBAN
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.7.1" data-path="../market/LINGBAN/TTS_HTTP.html">
+            
+                <a href="https://aidoc.jd.com/market/LINGBAN/TTS_HTTP.html">
+            
+                    
+                        <b>7.7.1.</b>
+                    
+                    语音合成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8">
+            
+                <span>
+            
+                    
+                        <b>7.8.</b>
+                    
+                    思图场景
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.8.1" data-path="../market/situ/facecompare.html">
+            
+                <a href="https://aidoc.jd.com/market/situ/facecompare.html">
+            
+                    
+                        <b>7.8.1.</b>
+                    
+                    人脸对比1:1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8.2" data-path="../market/situ/Bank_card_OCR.html">
+            
+                <a href="https://aidoc.jd.com/market/situ/Bank_card_OCR.html">
+            
+                    
+                        <b>7.8.2.</b>
+                    
+                    银行卡OCR文字识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8.3" data-path="../market/situ/Business_license_OCR.html">
+            
+                <a href="https://aidoc.jd.com/market/situ/Business_license_OCR.html">
+            
+                    
+                        <b>7.8.3.</b>
+                    
+                    营业执照OCR文字识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8.4" data-path="../market/situ/Driving_license_OCR.html">
+            
+                <a href="https://aidoc.jd.com/market/situ/Driving_license_OCR.html">
+            
+                    
+                        <b>7.8.4.</b>
+                    
+                    驾驶证OCR文字识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8.5" data-path="../market/situ/Expression_classification.html">
+            
+                <a href="https://aidoc.jd.com/market/situ/Expression_classification.html">
+            
+                    
+                        <b>7.8.5.</b>
+                    
+                    表情情绪分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8.6" data-path="../market/situ/Expression_level_analysis.html">
+            
+                <a href="https://aidoc.jd.com/market/situ/Expression_level_analysis.html">
+            
+                    
+                        <b>7.8.6.</b>
+                    
+                    情绪程度分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8.7" data-path="../market/situ/Face_matting.html">
+            
+                <a href="https://aidoc.jd.com/market/situ/Face_matting.html">
+            
+                    
+                        <b>7.8.7.</b>
+                    
+                    人脸抠图截取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8.8" data-path="../market/situ/File_correction.html">
+            
+                <a href="https://aidoc.jd.com/market/situ/File_correction.html">
+            
+                    
+                        <b>7.8.8.</b>
+                    
+                    文件图片矫正
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8.9" data-path="../market/situ/General_OCR.html">
+            
+                <a href="https://aidoc.jd.com/market/situ/General_OCR.html">
+            
+                    
+                        <b>7.8.9.</b>
+                    
+                    通用OCR文字识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8.10" data-path="../market/situ/Id_card_OCR.html">
+            
+                <a href="https://aidoc.jd.com/market/situ/Id_card_OCR.html">
+            
+                    
+                        <b>7.8.10.</b>
+                    
+                    身份证OCR文字识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8.11" data-path="../market/situ/Purchase_invoice_OCR.html">
+            
+                <a href="https://aidoc.jd.com/market/situ/Purchase_invoice_OCR.html">
+            
+                    
+                        <b>7.8.11.</b>
+                    
+                    购车发票OCR文字识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8.12" data-path="../market/situ/VAT_invoice_OCR.html">
+            
+                <a href="https://aidoc.jd.com/market/situ/VAT_invoice_OCR.html">
+            
+                    
+                        <b>7.8.12.</b>
+                    
+                    增值税发票OCR文字识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8.13" data-path="../market/situ/Vehicle_license_OCR.html">
+            
+                <a href="https://aidoc.jd.com/market/situ/Vehicle_license_OCR.html">
+            
+                    
+                        <b>7.8.13.</b>
+                    
+                    行驶证OCR文字识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8.14" data-path="../market/situ/h5.html">
+            
+                <a href="https://aidoc.jd.com/market/situ/h5.html">
+            
+                    
+                        <b>7.8.14.</b>
+                    
+                    H5静默活体检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8.15" data-path="../market/situ/id_card_two.html">
+            
+                <a href="https://aidoc.jd.com/market/situ/id_card_two.html">
+            
+                    
+                        <b>7.8.15.</b>
+                    
+                    身份证二要素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8.16" data-path="../market/situ/id_card_three.html">
+            
+                <a href="https://aidoc.jd.com/market/situ/id_card_three.html">
+            
+                    
+                        <b>7.8.16.</b>
+                    
+                    身份证三要素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8.17" data-path="../market/situ/Bank_card_three.html">
+            
+                <a href="https://aidoc.jd.com/market/situ/Bank_card_three.html">
+            
+                    
+                        <b>7.8.17.</b>
+                    
+                    银行卡三要素实名认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8.18" data-path="../market/situ/Bank_card_four.html">
+            
+                <a href="https://aidoc.jd.com/market/situ/Bank_card_four.html">
+            
+                    
+                        <b>7.8.18.</b>
+                    
+                    银行卡四要素实名认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8.19" data-path="../market/situ/form_ocr.html">
+            
+                <a href="https://aidoc.jd.com/market/situ/form_ocr.html">
+            
+                    
+                        <b>7.8.19.</b>
+                    
+                    表格识别OCR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8.20" data-path="../market/situ/insurance_monad_OCR.html">
+            
+                <a href="https://aidoc.jd.com/market/situ/insurance_monad_OCR.html">
+            
+                    
+                        <b>7.8.20.</b>
+                    
+                    保单OCR
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9">
+            
+                <span>
+            
+                    
+                        <b>7.9.</b>
+                    
+                    尖叫数据
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.9.1" data-path="../market/JJSJ/Vehicle_license_YZM.html">
+            
+                <a href="https://aidoc.jd.com/market/JJSJ/Vehicle_license_YZM.html">
+            
+                    
+                        <b>7.9.1.</b>
+                    
+                    验证码识别极速版
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10">
+            
+                <span>
+            
+                    
+                        <b>7.10.</b>
+                    
+                    多语种语音能力
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.10.1" data-path="../market/daniu/ballerai_asr.html">
+            
+                <a href="https://aidoc.jd.com/market/daniu/ballerai_asr.html">
+            
+                    
+                        <b>7.10.1.</b>
+                    
+                    多语种语音识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11">
+            
+                <span>
+            
+                    
+                        <b>7.11.</b>
+                    
+                    思必驰
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.11.1" data-path="../market/sibichi/sibichi_asr.html">
+            
+                <a href="https://aidoc.jd.com/market/sibichi/sibichi_asr.html">
+            
+                    
+                        <b>7.11.1.</b>
+                    
+                    语音一句话识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11.2" data-path="../market/sibichi/sibichi_tts.html">
+            
+                <a href="https://aidoc.jd.com/market/sibichi/sibichi_tts.html">
+            
+                    
+                        <b>7.11.2.</b>
+                    
+                    语音合成接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12">
+            
+                <span>
+            
+                    
+                        <b>7.12.</b>
+                    
+                    深源恒际
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.12.1" data-path="../market/deepfinch/deepfinch_ocr_idcard.html">
+            
+                <a href="https://aidoc.jd.com/market/deepfinch/deepfinch_ocr_idcard.html">
+            
+                    
+                        <b>7.12.1.</b>
+                    
+                    身份证OCR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12.2" data-path="../market/deepfinch/deepfinch_ocr_medical_admission_note.html">
+            
+                <a href="https://aidoc.jd.com/market/deepfinch/deepfinch_ocr_medical_admission_note.html">
+            
+                    
+                        <b>7.12.2.</b>
+                    
+                    入院记录OCR识别提取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12.3" data-path="../market/deepfinch/deepfinch_ocr_medical_invoice_tianjin.html">
+            
+                <a href="https://aidoc.jd.com/market/deepfinch/deepfinch_ocr_medical_invoice_tianjin.html">
+            
+                    
+                        <b>7.12.3.</b>
+                    
+                    天津门诊发票OCR识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12.4" data-path="../market/deepfinch/deepfinch_ocr_medical_discharge_report.html">
+            
+                <a href="https://aidoc.jd.com/market/deepfinch/deepfinch_ocr_medical_discharge_report.html">
+            
+                    
+                        <b>7.12.4.</b>
+                    
+                    出院小结OCR识别提取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12.5" data-path="../market/deepfinch/deepfinch_ocr_medical_invoice.html">
+            
+                <a href="https://aidoc.jd.com/market/deepfinch/deepfinch_ocr_medical_invoice.html">
+            
+                    
+                        <b>7.12.5.</b>
+                    
+                    医疗发票OCR识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12.6" data-path="../market/deepfinch/deepfinch_ocr_medical_invoice_beijing.html">
+            
+                <a href="https://aidoc.jd.com/market/deepfinch/deepfinch_ocr_medical_invoice_beijing.html">
+            
+                    
+                        <b>7.12.6.</b>
+                    
+                    北京门诊发票OCR识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12.7" data-path="../market/deepfinch/deepfinch_ocr_medical_invoice_guangdong.html">
+            
+                <a href="https://aidoc.jd.com/market/deepfinch/deepfinch_ocr_medical_invoice_guangdong.html">
+            
+                    
+                        <b>7.12.7.</b>
+                    
+                    广东门诊发票OCR识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12.8" data-path="../market/deepfinch/deepfinch_ocr_medical_invoice_hebei.html">
+            
+                <a href="https://aidoc.jd.com/market/deepfinch/deepfinch_ocr_medical_invoice_hebei.html">
+            
+                    
+                        <b>7.12.8.</b>
+                    
+                    河北门诊发票OCR识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12.9" data-path="../market/deepfinch/deepfinch_ocr_medical_invoice_henan.html">
+            
+                <a href="https://aidoc.jd.com/market/deepfinch/deepfinch_ocr_medical_invoice_henan.html">
+            
+                    
+                        <b>7.12.9.</b>
+                    
+                    河南门诊发票OCR识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12.10" data-path="../market/deepfinch/deepfinch_ocr_medical_invoice_jiangsu.html">
+            
+                <a href="https://aidoc.jd.com/market/deepfinch/deepfinch_ocr_medical_invoice_jiangsu.html">
+            
+                    
+                        <b>7.12.10.</b>
+                    
+                    江苏门诊发票OCR识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12.11" data-path="../market/deepfinch/deepfinch_ocr_medical_invoice_shandong.html">
+            
+                <a href="https://aidoc.jd.com/market/deepfinch/deepfinch_ocr_medical_invoice_shandong.html">
+            
+                    
+                        <b>7.12.11.</b>
+                    
+                    山东门诊发票OCR识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12.12" data-path="../market/deepfinch/deepfinch_ocr_medical_invoice_shanghai.html">
+            
+                <a href="https://aidoc.jd.com/market/deepfinch/deepfinch_ocr_medical_invoice_shanghai.html">
+            
+                    
+                        <b>7.12.12.</b>
+                    
+                    上海门诊发票OCR识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12.13" data-path="../market/deepfinch/deepfinch_ocr_medical_invoice_zhejiang.html">
+            
+                <a href="https://aidoc.jd.com/market/deepfinch/deepfinch_ocr_medical_invoice_zhejiang.html">
+            
+                    
+                        <b>7.12.13.</b>
+                    
+                    浙江门诊发票OCR识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12.14" data-path="../market/deepfinch/deepfinch_ocr_pdf_credit_report.html">
+            
+                <a href="https://aidoc.jd.com/market/deepfinch/deepfinch_ocr_pdf_credit_report.html">
+            
+                    
+                        <b>7.12.14.</b>
+                    
+                    一代征信报告OCR识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12.15" data-path="../market/deepfinch/deepfinch_ocr_v2_pdf_credit_report.html">
+            
+                <a href="https://aidoc.jd.com/market/deepfinch/deepfinch_ocr_v2_pdf_credit_report.html">
+            
+                    
+                        <b>7.12.15.</b>
+                    
+                    二代征信报告OCR识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.13">
+            
+                <span>
+            
+                    
+                        <b>7.13.</b>
+                    
+                    相芯科技
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.13.1" data-path="../market/Faceunity/Animoji.html">
+            
+                <a href="https://aidoc.jd.com/market/Faceunity/Animoji.html">
+            
+                    
+                        <b>7.13.1.</b>
+                    
+                    Animoji
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.13.2" data-path="../market/Faceunity/ARMesh.html">
+            
+                <a href="https://aidoc.jd.com/market/Faceunity/ARMesh.html">
+            
+                    
+                        <b>7.13.2.</b>
+                    
+                    ARMesh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.13.3" data-path="../market/Faceunity/background.html">
+            
+                <a href="https://aidoc.jd.com/market/Faceunity/background.html">
+            
+                    
+                        <b>7.13.3.</b>
+                    
+                    背景分割
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.13.4" data-path="../market/Faceunity/beauty.html">
+            
+                <a href="https://aidoc.jd.com/market/Faceunity/beauty.html">
+            
+                    
+                        <b>7.13.4.</b>
+                    
+                    美颜
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.13.5" data-path="../market/Faceunity/facedetection.html">
+            
+                <a href="https://aidoc.jd.com/market/Faceunity/facedetection.html">
+            
+                    
+                        <b>7.13.5.</b>
+                    
+                    表情识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.13.6" data-path="../market/Faceunity/sticker.html">
+            
+                <a href="https://aidoc.jd.com/market/Faceunity/sticker.html">
+            
+                    
+                        <b>7.13.6.</b>
+                    
+                    贴纸
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.13.7" data-path="../market/Faceunity/facewarp.html">
+            
+                <a href="https://aidoc.jd.com/market/Faceunity/facewarp.html">
+            
+                    
+                        <b>7.13.7.</b>
+                    
+                    哈哈镜
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">AI工具</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1">
+            
+                <span>
+            
+                    
+                        <b>8.1.</b>
+                    
+                    NeuFoundry
+            
+                <i class="exc-trigger fa"></i></span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1.1" data-path="../neufoundry/basic/basic.md">
+            
+                <span>
+            
+                    
+                        <b>8.1.1.</b>
+                    
+                    基础知识
+            
+                
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1.1.1" data-path="../neufoundry/basic/glossary.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/basic/glossary.html">
+            
+                    
+                        <b>8.1.1.1.</b>
+                    
+                    名词解释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.1.2" data-path="../neufoundry/basic/process.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/basic/process.html">
+            
+                    
+                        <b>8.1.1.2.</b>
+                    
+                    AI开发基本流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.1.3" data-path="../neufoundry/basic/prepare.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/basic/prepare.html">
+            
+                    
+                        <b>8.1.1.3.</b>
+                    
+                    准备工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </span></li>
+    
+        <li class="chapter " data-level="8.1.2" data-path="../neufoundry/introduction/overview.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/introduction/overview.html">
+            
+                    
+                        <b>8.1.2.</b>
+                    
+                    产品介绍
+            
+                <i class="exc-trigger fa"></i></a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1.2.1" data-path="../neufoundry/introduction/overview.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/introduction/overview.html">
+            
+                    
+                        <b>8.1.2.1.</b>
+                    
+                    产品概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.2.2" data-path="../neufoundry/introduction/overview.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/introduction/overview.html">
+            
+                    
+                        <b>8.1.2.2.</b>
+                    
+                    产品架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.2.3" data-path="../neufoundry/introduction/overview.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/introduction/overview.html#product">
+            
+                    
+                        <b>8.1.2.3.</b>
+                    
+                    产品优势
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.3" data-path="../neufoundry/quickstart/overview.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/quickstart/overview.html">
+            
+                    
+                        <b>8.1.3.</b>
+                    
+                    快速入门
+            
+                <i class="exc-trigger fa"></i></a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1.3.1" data-path="../neufoundry/quickstart/demo.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/quickstart/demo.html">
+            
+                    
+                        <b>8.1.3.1.</b>
+                    
+                    演示demo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.3.2" data-path="../neufoundry/quickstart/auto.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/quickstart/auto.html">
+            
+                    
+                        <b>8.1.3.2.</b>
+                    
+                    自动化模型训练
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.4" data-path="../neufoundry/manual/readme.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/manual/readme.html">
+            
+                    
+                        <b>8.1.4.</b>
+                    
+                    NeuFoundry产品使用指南
+            
+                <i class="exc-trigger fa"></i></a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1.4.1" data-path="../neufoundry/manual/dashboard.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/manual/dashboard.html">
+            
+                    
+                        <b>8.1.4.1.</b>
+                    
+                    个人概览页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.4.2" data-path="../neufoundry/manual/data.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/manual/data.html">
+            
+                    
+                        <b>8.1.4.2.</b>
+                    
+                    数据
+            
+                <i class="exc-trigger fa"></i></a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1.4.2.1" data-path="../neufoundry/manual/data/updata1.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/manual/data/updata1.html">
+            
+                    
+                        <b>8.1.4.2.1.</b>
+                    
+                    数据管理功能
+            
+                <i class="exc-trigger fa"></i></a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1.4.2.1.1" data-path="../neufoundry/manual/data/updata1.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/manual/data/updata1.html">
+            
+                    
+                        <b>8.1.4.2.1.1.</b>
+                    
+                    原始数据上传
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.4.2.1.2" data-path="../neufoundry/manual/data/updata2.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/manual/data/updata2.html">
+            
+                    
+                        <b>8.1.4.2.1.2.</b>
+                    
+                    标注数据上传
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.4.2.1.3" data-path="../neufoundry/manual/data/updata3.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/manual/data/updata3.html">
+            
+                    
+                        <b>8.1.4.2.1.3.</b>
+                    
+                    标注文件上传
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.4.2.2" data-path="../neufoundry/manual/data/tag1.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/manual/data/tag1.html">
+            
+                    
+                        <b>8.1.4.2.2.</b>
+                    
+                    数据标注功能
+            
+                <i class="exc-trigger fa"></i></a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1.4.2.2.1" data-path="../neufoundry/manual/data/tag1.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/manual/data/tag1.html">
+            
+                    
+                        <b>8.1.4.2.2.1.</b>
+                    
+                    文本分类标注
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.4.2.2.2" data-path="../neufoundry/manual/data/tag2.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/manual/data/tag2.html">
+            
+                    
+                        <b>8.1.4.2.2.2.</b>
+                    
+                    图像分类标注
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.4.2.2.3" data-path="../neufoundry/manual/data/tag3.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/manual/data/tag3.html">
+            
+                    
+                        <b>8.1.4.2.2.3.</b>
+                    
+                    目标检测标注
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.4.2.3" data-path="../neufoundry/manual/data/public.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/manual/data/public.html">
+            
+                    
+                        <b>8.1.4.2.3.</b>
+                    
+                    公开数据集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.4.2.4" data-path="../neufoundry/manual/data/favorites.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/manual/data/favorites.html">
+            
+                    
+                        <b>8.1.4.2.4.</b>
+                    
+                    我的收藏（数据集）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.4.2.5" data-path="../neufoundry/dataset/sample.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/dataset/sample.html">
+            
+                    
+                        <b>8.1.4.2.5.</b>
+                    
+                    数据集要求及样例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.4.3" data-path="../neufoundry/manual/project.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/manual/project.html">
+            
+                    
+                        <b>8.1.4.3.</b>
+                    
+                    项目
+            
+                <i class="exc-trigger fa"></i></a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1.4.3.1" data-path="../neufoundry/manual/project/task.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/manual/project/task.html">
+            
+                    
+                        <b>8.1.4.3.1.</b>
+                    
+                    算法任务式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.4.3.2" data-path="../neufoundry/manual/project/notebook.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/manual/project/notebook.html">
+            
+                    
+                        <b>8.1.4.3.2.</b>
+                    
+                    Jupyter NoteBook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.4.3.3" data-path="../neufoundry/manual/project/drag.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/manual/project/drag.html">
+            
+                    
+                        <b>8.1.4.3.3.</b>
+                    
+                    图形化拖拽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.4.3.4" data-path="../neufoundry/manual/project/auto.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/manual/project/auto.html">
+            
+                    
+                        <b>8.1.4.3.4.</b>
+                    
+                    自动化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.4.3.5" data-path="../neufoundry/manual/project/public.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/manual/project/public.html">
+            
+                    
+                        <b>8.1.4.3.5.</b>
+                    
+                    公开项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.4.3.6" data-path="../neufoundry/manual/project/favorites.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/manual/project/favorites.html">
+            
+                    
+                        <b>8.1.4.3.6.</b>
+                    
+                    我的收藏（项目）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.4.4" data-path="../neufoundry/service/image-api.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/service/image-api.html">
+            
+                    
+                        <b>8.1.4.4.</b>
+                    
+                    接口文档
+            
+                <i class="exc-trigger fa"></i></a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1.4.4.1" data-path="../neufoundry/service/image-api.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/service/image-api.html">
+            
+                    
+                        <b>8.1.4.4.1.</b>
+                    
+                    图像分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.4.4.2" data-path="../neufoundry/service/od-api.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/service/od-api.html">
+            
+                    
+                        <b>8.1.4.4.2.</b>
+                    
+                    目标检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.4.4.3" data-path="../neufoundry/service/text-api.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/service/text-api.html">
+            
+                    
+                        <b>8.1.4.4.3.</b>
+                    
+                    文本分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.4.4.4" data-path="../neufoundry/service/ml-api.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/service/ml-api.html">
+            
+                    
+                        <b>8.1.4.4.4.</b>
+                    
+                    机器学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.5" data-path="../neufoundry/sample/sample.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/sample/sample.html">
+            
+                    
+                        <b>8.1.5.</b>
+                    
+                    示例代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.6" data-path="../neufoundry/faq/faq.html">
+            
+                <a href="https://aidoc.jd.com/neufoundry/faq/faq.html">
+            
+                    
+                        <b>8.1.6.</b>
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com/" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <a class="btn pull-left js-toolbar-action" aria-label="" href="https://aidoc.jd.com/censor/censor_text.html#"><i class="fa fa-align-justify"></i></a><div class="dropdown pull-left font-settings js-toolbar-action"><a class="btn toggle-dropdown" aria-label="Font Settings" href="https://aidoc.jd.com/censor/censor_text.html#"><i class="fa fa-font"></i></a><div class="dropdown-menu dropdown-right"><div class="dropdown-caret"><span class="caret-outer"></span><span class="caret-inner"></span></div><div class="buttons"><button class="button size-2 font-reduce">A</button><button class="button size-2 font-enlarge">A</button></div><div class="buttons"><button class="button size-2 ">Serif</button><button class="button size-2 ">Sans</button></div><div class="buttons"><button class="button size-3 ">White</button><button class="button size-3 ">Sepia</button><button class="button size-3 ">Night</button></div></div></div><h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="https://aidoc.jd.com/">文本智能审核</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="文本智能审核">文本智能审核</h1>
+<h2 id="一、接口描述">一、接口描述</h2>
+<h3 id="1-功能描述">1. 功能描述</h3>
+<p>  深入理解文本中的涉黄、涉政、暴恐等场景的违法违规信息，辅助人工高效精准定位文本内容风险问题，降低运营审核人力成本。</p>
+<h3 id="2-接口数据要求：">2. 接口数据要求：</h3>
+<blockquote>
+<ol>
+<li>中文文本</li>
+</ol>
+</blockquote>
+<h3 id="3-接口使用：">3. 接口使用：</h3>
+<p>  平台为每个API提供试用体验服务，您在AI市场选择“免费试用”规格下单后，即可开始体验业内领先的人工智能API服务。
+免费试用服务具有调用量、QPS限制，如需更高性能的API服务，可以提交咨询工单，联系京东AI扩容购买。</p>
+<p>在获得使用权限后，您可使用已经封装好的SDK/参照<a href="https://aidoc.jd.com/user/auth.html" target="_blank">接口鉴权</a>规则进行相应开发，整体流程详见   <a href="https://aidoc.jd.com/user/flow.html" target="_blank">接入流程</a>  </p>
+<h2 id="二、请求说明">二、请求说明</h2>
+<h3 id="1-接口地址-：">1. 接口地址 ：</h3>
+<pre><code>https://aiapi.jd.com/jdai/censor_text
+</code></pre><h3 id="2-请求方式：">2. 请求方式：</h3>
+<pre><code> post
+</code></pre><h3 id="3-请求参数">3. 请求参数</h3>
+<h4 id="（1）query请求参数">（1）query请求参数</h4>
+<p>公共请求参数  </p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必填</th>
+<th>示例值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>appkey</td>
+<td>String</td>
+<td>是</td>
+<td>80d2b762ecb86593f9668526920f46c</td>
+<td>您的appkey，可在买家中心控制台中获取  </td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>long</td>
+<td>是</td>
+<td>1541491668060</td>
+<td>请求的时间戳，精确到毫秒，timestamp有效期5分钟  </td>
+</tr>
+<tr>
+<td>sign</td>
+<td>String</td>
+<td>是</td>
+<td>2e148773a0337a8f2200ba90d445f083</td>
+<td>签名，根据规则MD5(sectetkey+timestamp) </td>
+</tr>
+</tbody>
+</table>
+<h4 id="（2）header请求参数">（2）header请求参数</h4>
+<p>业务请求参数</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必填</th>
+<th>示例值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content-Type</td>
+<td>String</td>
+<td>是</td>
+<td>application/json</td>
+<td>请求头格式</td>
+</tr>
+</tbody>
+</table>
+<h4 id="（3）body请求参数">（3）body请求参数</h4>
+<h4 id="业务请求参数">业务请求参数</h4>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必填</th>
+<th>示例值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>text</td>
+<td>String</td>
+<td>是</td>
+<td>"文本内容"</td>
+<td>文本内容，字符长度限制在1000以内。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4、请求代码示例">4、请求代码示例</h3>
+<p>建议您使用我们提供的SDK进行调用，SDK获取及调用方式详见本页一接口描述中的3接口使用</p>
+<h2 id="三、返回说明">三、返回说明</h2>
+<h3 id="1、返回参数">1、返回参数</h3>
+<h4 id="（1）公共返回参数">（1）公共返回参数</h4>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>示例值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>String</td>
+<td>1000</td>
+<td>参见下方错误码-系统级错误码</td>
+</tr>
+<tr>
+<td>charge</td>
+<td>boolean</td>
+<td>false 或 true</td>
+<td>false：不扣费， true：扣费</td>
+</tr>
+<tr>
+<td>remainTimes</td>
+<td>long</td>
+<td>1305</td>
+<td>剩余调用次数；免费api：每天剩余调用次数；收费api：剩余次数；无限制时为-1</td>
+</tr>
+<tr>
+<td>remainSeconds</td>
+<td>long</td>
+<td>1223456</td>
+<td>剩余调用时间（s）；免费api：-1；收费api：剩余调用时间；无限制时为-1</td>
+</tr>
+<tr>
+<td>msg</td>
+<td>String</td>
+<td>查询成功</td>
+<td>参见下方错误码-系统级错误码</td>
+</tr>
+<tr>
+<td>result</td>
+<td>object</td>
+<td>{...}</td>
+<td>查询结果</td>
+</tr>
+</tbody>
+</table>
+<h4 id="（2）业务返回参数">（2）业务返回参数</h4>
+<p>result参数信息</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td>Int</td>
+<td>审核任务状态和进度 0: 审核成功，非0为失败，详情见附表。</td>
+</tr>
+<tr>
+<td>requestId</td>
+<td>String</td>
+<td>请求id</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+<td>对状态码的信息描述。</td>
+</tr>
+<tr>
+<td>label</td>
+<td>Int</td>
+<td>审核综合结果；0：无违规；1：疑似违规，需要人工复核； 2： 确定违规。 status=0时存在。</td>
+</tr>
+<tr>
+<td>data</td>
+<td>JSON</td>
+<td>各个文本审核算法能力维度结果。status=0时存在。</td>
+</tr>
+</tbody>
+</table>
+<h5 id="文本审核结果">文本审核结果</h5>
+<h6 id="data-包含的结构体内容">data 包含的结构体内容</h6>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>必须</th>
+<th>类型</th>
+<th>示例值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>porn</td>
+<td>是</td>
+<td>Object</td>
+<td></td>
+<td>文本鉴黄结果</td>
+</tr>
+<tr>
+<td>+label</td>
+<td>是</td>
+<td>Int</td>
+<td>0</td>
+<td>文本鉴黄检测状态：0：无违规；1：疑似违规，需要人工复核； 2： 确定违规；</td>
+</tr>
+<tr>
+<td>+score</td>
+<td>是</td>
+<td>Float</td>
+<td>0.3</td>
+<td>文本涉黄置信度评分</td>
+</tr>
+<tr>
+<td>+words</td>
+<td>是</td>
+<td>Array</td>
+<td>["三级片"，"大保健"]</td>
+<td>命中文本中的涉黄敏感词，可能为空</td>
+</tr>
+<tr>
+<td>politics</td>
+<td>是</td>
+<td>Object</td>
+<td></td>
+<td>文本涉政结果</td>
+</tr>
+<tr>
+<td>+label</td>
+<td>是</td>
+<td>Int</td>
+<td>0</td>
+<td>文本涉政检测状态：0：无违规；1：疑似违规，需要人工复核； 2： 确定违规；</td>
+</tr>
+<tr>
+<td>+score</td>
+<td>是</td>
+<td>Float</td>
+<td>0.41</td>
+<td>文本涉政置信度评分</td>
+</tr>
+<tr>
+<td>+words</td>
+<td>是</td>
+<td>Array</td>
+<td>["天安门"，"白宫"]</td>
+<td>命中文本中的涉政敏感词，可能为空</td>
+</tr>
+<tr>
+<td>terror</td>
+<td>是</td>
+<td>Object</td>
+<td></td>
+<td>文本涉恐结果</td>
+</tr>
+<tr>
+<td>+label</td>
+<td>是</td>
+<td>Int</td>
+<td>0</td>
+<td>文本涉恐检测状态：0：无违规；1：疑似违规，需要人工复核； 2： 确定违规；</td>
+</tr>
+<tr>
+<td>+score</td>
+<td>是</td>
+<td>Float</td>
+<td>0.24</td>
+<td>文本涉恐置信度评分</td>
+</tr>
+<tr>
+<td>+words</td>
+<td>是</td>
+<td>Array</td>
+<td>["911事件"]</td>
+<td>命中文本中的涉恐敏感词，可能为空</td>
+</tr>
+</tbody>
+</table>
+<h4 id="置信度评分说明">置信度评分说明</h4>
+<p><strong>0.9 &lt;= score &lt;= 1.0</strong> : 确认违规，可以自动驳回。</p>
+<p><strong>0.5 &lt;= score &lt; 0.9</strong> : 疑似违规，需要人工复审。</p>
+<p><strong>0&lt;= score &lt; 0.5</strong> : 无违规。</p>
+<h3 id="2、返回示例">2、返回示例</h3>
+<pre><code class="lang-json">{
+    <span class="hljs-string">"requestId"</span>: <span class="hljs-string">"c5721b2b7cdb488fafb1e065c4c40619"</span>,
+    <span class="hljs-string">"status"</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-string">"message"</span>: <span class="hljs-string">"success"</span>,
+    <span class="hljs-string">"label"</span>: <span class="hljs-number">1</span>,
+    <span class="hljs-string">"data"</span>: {
+        <span class="hljs-string">"porn"</span>: {
+            <span class="hljs-string">"label"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-string">"words"</span>: [<span class="hljs-string">"三级片"</span>, <span class="hljs-string">"大保健"</span>],
+            <span class="hljs-string">"score"</span>: <span class="hljs-number">0.7883</span>
+        },
+        <span class="hljs-string">"politics"</span>: {
+            <span class="hljs-string">"label"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-string">"words"</span>: [<span class="hljs-string">"特朗普"</span>, <span class="hljs-string">"天安门"</span>],
+            <span class="hljs-string">"score"</span>: <span class="hljs-number">0.534</span>
+        },
+        <span class="hljs-string">"terror"</span>: {
+            <span class="hljs-string">"label"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-string">"words"</span>: [<span class="hljs-string">"拉登"</span>, <span class="hljs-string">"911事件"</span>],
+            <span class="hljs-string">"score"</span>: <span class="hljs-number">0.853</span>
+        }
+    }
+}
+</code></pre>
+<h2 id="四、错误码">四、错误码</h2>
+<h3 id="1系统级错误码">1.系统级错误码</h3>
+<p><a href="https://aidoc.jd.com/user/returncode.html" target="_blank">详见返回码</a>  </p>
+<h3 id="2业务错误码">2.业务错误码</h3>
+<h4 id="status状态码">status状态码</h4>
+<table>
+<thead>
+<tr>
+<th>错误号</th>
+<th>错误信息</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>success</td>
+<td>成功</td>
+</tr>
+<tr>
+<td>101</td>
+<td>Request body should be in json format</td>
+<td>请求body必须是json格式</td>
+</tr>
+<tr>
+<td>102</td>
+<td>Parameters are missing</td>
+<td>参数缺失</td>
+</tr>
+<tr>
+<td>103</td>
+<td>Value of parameters are empty</td>
+<td>参数值为空</td>
+</tr>
+<tr>
+<td>104</td>
+<td>Length of text is limited to 1000 characters</td>
+<td>text 字段最多允许1000个字符</td>
+</tr>
+<tr>
+<td>500</td>
+<td>Internal error</td>
+<td>内部错误</td>
+</tr>
+</tbody>
+</table>
+<footer class="page-footer"><span class="copyright">Copyright © JD AI Platform all right reserved，powered by Gitbook</span><span class="footer-modification">File Modify: 
+2020-09-29 09:14:28
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> results matching "<span class="search-query"></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class="search-query"></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="https://aidoc.jd.com/censor/censor_image.html" class="navigation navigation-prev " aria-label="Previous page: 通用图片审核">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="https://aidoc.jd.com/censor/censor_ad.html" class="navigation navigation-next " aria-label="Next page: 广告检测" style="margin-right: 19px;">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"文本智能审核","level":"3.2.2","depth":2,"next":{"title":"广告检测","level":"3.2.3","depth":2,"path":"censor/censor_ad.md","ref":"censor/censor_ad.md","articles":[]},"previous":{"title":"通用图片审核","level":"3.2.1","depth":2,"path":"censor/censor_image.md","ref":"censor/censor_image.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-plus","tbfed-pagefooter@^0.0.1","theme-default","expandable-chapters"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"theme-default":{"showLevel":true,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"tbfed-pagefooter":{"copyright":"Copyright © JD AI Platform","modify_format":"YYYY-MM-DD HH:mm:ss"},"search-plus":{},"expandable-chapters":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"Heguannan","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JD NeuHub API Documents","language":"zh-hans","links":{},"gitbook":"*","description":"The API Documents Center of JD NeuHub"},"file":{"path":"censor/censor_text.md","mtime":"2020-09-29T09:14:28.928Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-29T09:14:41.229Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="./文本智能审核 · JD NeuHub API Documents_files/gitbook.js.下载"></script>
+    <script src="./文本智能审核 · JD NeuHub API Documents_files/theme.js.下载"></script>
+    
+        
+        <script src="./文本智能审核 · JD NeuHub API Documents_files/jquery.mark.min.js.下载"></script>
+        
+    
+        
+        <script src="./文本智能审核 · JD NeuHub API Documents_files/search.js.下载"></script>
+        
+    
+        
+        <script src="./文本智能审核 · JD NeuHub API Documents_files/expandable-chapters.js.下载"></script>
+        
+    
+        
+        <script src="./文本智能审核 · JD NeuHub API Documents_files/fontsettings.js.下载"></script>
+        
+    
+
+    
+
+
+</body></html>
